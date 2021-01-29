@@ -1,7 +1,8 @@
-var factors = require("./../controllers/factors.js");
+var questions = require("./../controllers/questions.js");
 
 module.exports = function(app){
-	app.get("/REPLACE", function(req, res){
-		factors.index(req, res);
+	app.get("/questions", function(req, res){
+		console.log(req.body);
+		questions.index(req, res);
 	});
 }

@@ -1,24 +1,11 @@
-<div ng-controller = "FactorsController">
-	<h3>start</h3>
-	<!-- <h3>Add a new customer</h3>
-	Customer Name:
-	<input type = "text" ng-model="newCustomer.name">
-	<input class = "btn btn-primary" type = "submit" ng-click="addCustomer()">
-	<table class = "table table-stripped">
-		<thead>
-			<tr>
-				<th>Customer Name</th>
-				<th> Created Date</th>
-				<th>Actions</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat = "person in customers |filter:filer_name">
-				<td>{{person.name}}</td>
-				<td></td>
-				<td></td>
-			</tr>
-		</tbody>
-	</table> -->
+<div ng-controller="questionsController">
+	<div class='container'>
+		<h1 id="title" align="center">Warning Signs</h1>
+	</div>
+	<p align="center" style="padding-top:15px;">To better understand how to get help, please take this 10-15 minute assessments</p>
 
+	<div class="identify row" align='center'>
+		<h3>Who are you?</h3>
+		<h4><a ng-click="startSurvey('c')">I am a Youth</a>  |  <a ng-click="startSurvey('p'); getQuestion()">I am a Parent / Community Member</a></h4>
+	</div>
 </div>
